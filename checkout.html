@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+<head>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<title>Web Store Template</title>
+	<link rel="icon" href="favicon.png" type="image/png" />
+
+	<!-- Bootstrap core CSS -->
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- FontAwesome Emoji CSS Library -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google WebFonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web" rel="stylesheet">
+
+	<!-- Custom styles for this template -->
+	<link href="index.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<div class="container">
+			<a class="navbar-brand" href="index.html" target="_self"><i class="fa fa-handshake-o"></i>&nbsp;Web Store</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+			 aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="store.html" target="_self" style>Store</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="about.html" target="_self">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="login.html" target="_self">Register/Sign In</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="cart.html" target="_self">Cart<span id="crt_ttl">1</span>
+							<span class="sr-only">(current)</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Page Content -->
+	<section class="py-5" style="margin-left: 5%; margin-right: 5%;">
+		<div class="container" style="overflow: hidden;">
+			<div class="row">
+				<div class="col-md-4 order-md-2 mb-4">
+					<h4 class="d-flex justify-content-between align-items-center mb-3">
+						<span class="text-muted">Your cart</span>
+						<span class="badge badge-secondary badge-pill">1</span>
+					</h4>
+					<ul class="list-group mb-3">
+						<li class="list-group-item d-flex justify-content-between lh-condensed">
+							<div>
+								<h6 class="my-0"><button class="btn btn-primary store-nav">Item Epsilon</button></h6>
+								<small class="text-muted">Item Description</small>
+							</div>
+							<span class="text-muted">$24.99</span>
+						</li>
+						<!-- <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Second product</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$8</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-condensed">
+              <div>
+                <h6 class="my-0">Third item</h6>
+                <small class="text-muted">Brief description</small>
+              </div>
+              <span class="text-muted">$5</span>
+            </li> -->
+						<li class="list-group-item d-flex justify-content-between bg-light">
+							<div class="text-error">
+								<h6 class="my-0">Tax</h6>
+							</div>
+							<span class="text-error">$0.99</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between bg-light">
+							<div class="text-success">
+								<h6 class="my-0">Promo code</h6>
+								<small>EXAMPLECODE</small>
+							</div>
+							<span class="text-success">-$5</span>
+						</li>
+						<li class="list-group-item d-flex justify-content-between">
+							<span>Total (USD)</span>
+							<strong>$20.98</strong>
+						</li>
+					</ul>
+
+					<form class="card p-2">
+						<div class="input-group">
+							<input type="text" class="form-control" placeholder="Promo code">
+							<div class="input-group-append">
+								<button type="submit" class="btn btn-secondary">Redeem</button>
+							</div>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-8 order-md-1">
+					<h4 class="mb-3">Billing address</h4>
+					<form class="needs-validation" novalidate>
+						<div class="row">
+							<div class="col-md-6 mb-3">
+								<label for="firstName">First name</label>
+								<input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+							</div>
+							<div class="col-md-6 mb-3">
+								<label for="lastName">Last name</label>
+								<input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="username">Username</label>
+							<div class="input-group">
+								<input type="text" class="form-control" id="username" placeholder="loaded_id123" required readonly>
+							</div>
+						</div>
+
+						<div class="mb-3">
+							<label for="email">Email</label>
+							<input type="email" class="form-control" id="email" placeholder="you@example.com">
+						</div>
+
+						<div class="mb-3">
+							<label for="address">Address</label>
+							<input type="text" class="form-control" id="address" placeholder="1234 Main St" required>
+						</div>
+
+						<div class="mb-3">
+							<label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
+							<input type="text" class="form-control" id="address2" placeholder="Apartment or suite">
+						</div>
+
+						<div class="row">
+							<div class="col-md-5 mb-3">
+								<label for="country">Country</label>
+								<select class="custom-select d-block w-100" id="country" name="country" required></select>
+							</div>
+							<div class="col-md-4 mb-3">
+								<label for="state">State</label>
+								<select class="custom-select d-block w-100" id="state" name="state" required></select>
+							</div>
+							<div class="col-md-3 mb-3">
+								<label for="zip">Zip/Postal Code</label>
+								<input type="text" class="form-control" id="zip" placeholder="" required>
+							</div>
+						</div>
+						<hr class="mb-4">
+						<div class="custom-control custom-checkbox">
+							<input type="checkbox" class="custom-control-input" id="save-info">
+							<label class="custom-control-label" for="save-info">Save this information for next time</label>
+						</div>
+						<hr class="mb-4">
+
+						<h4 class="mb-3">Payment Method</h4>
+
+						<div class="d-block my-3">
+							<div class="custom-control custom-radio">
+								<input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked required>
+								<label class="custom-control-label" for="credit">Credit card</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+								<label class="custom-control-label" for="debit">Debit card</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+								<label class="custom-control-label" for="paypal">Paypal</label>
+							</div>
+              <div class="custom-control custom-radio">
+								<input id="google_wallet" name="paymentMethod" type="radio" class="custom-control-input" required>
+								<label class="custom-control-label" for="google_wallet">Google Wallet</label>
+							</div>
+              <div class="custom-control custom-radio">
+								<input id="facebook_pay" name="paymentMethod" type="radio" class="custom-control-input" required>
+								<label class="custom-control-label" for="facebook_pay">Facebook Pay</label>
+							</div>
+						</div>
+						<div id="payment_type_form" class="container">
+						</div>
+						<hr class="mb-4">
+						<button id="finalize_purchase" class="btn btn-primary btn-lg btn-block" type="submit">Continue to checkout</button>
+					</form>
+					<div id="err_prmpt"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="py-5 bg-dark">
+		<div class="container">
+      <div class="row" id="langSel">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg c4">
+          <a id="en"><img id="engl" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="c3"></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+          <a id="jap" alt="日本語"></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+          <a id="kor" alt="한국어"></a>
+        </div>
+
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+          <a id="chn" alt="中文"></a>
+        </div>
+      </div>
+			<p class="m-0 text-center text-white">Copyright &copy; Web Store 2018</p>
+		</div>
+		<!-- /.container -->
+	</footer>
+
+	<!-- Bootstrap core JavaScript -->
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	 crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
+	<!-- jQuery U/I Library -->
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
+	 crossorigin="anonymous"></script>
+  
+  <!-- CSSScript Country Listings -->
+  <script src="countries.js"></script>
+
+	<!-- Custom JS -->
+	<script src="index.js"></script>
+	<script src="checkout.js"></script>
+
+</body>
+
+</html>

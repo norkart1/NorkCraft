@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" style="height: 100%;">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Web Store Template</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- FontAwesome Emoji CSS Library -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Google WebFonts -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Titillium+Web" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="index.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" target="_self"><i class="fa fa-handshake-o"></i>&nbsp;Web Store</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="store.html" target="_self" style>Store</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" target="_self">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="login.html" target="_self">Register/Sign In</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="cart.html" target="_self">Cart<span id="crt_ttl">1</span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="box">							
+              <div class="icon">
+                <div class="image"><i class="fa fa-universal-access"></i></div>
+                <div class="info">
+                  <h3 class="title">Welcome!</h3>
+                  <p>
+                    Hello! It seems like <b>this email hasn't been registered yet</b>. To make an account, please <b>follow the instructions below</b>. Thank you for your interest in <b>Web Store</b>!
+                  </p>
+                </div>
+              </div>
+              <div class="space"></div>
+            </div> 
+          </div>
+        </div>
+        <div id="color_select" class="row">
+          <div class="col-12">
+            <br>
+            <br>
+            <h2>Pick your color scheme.</h2>
+            <hr style="border-top-color:rgb(0,0,0) !important;">
+            <h6>The use of color in our everyday world is an important topic. It influences how companies market their products.</h6>
+            <hr>
+            <div class="input-group">
+              <span class="input-group-btn">
+                  <button type="button" class="btn btn-primary btn-add"><i class="fa fa-plus"></i></button>
+              </span>
+						  <input type="text" name="color" class="form-control">
+              <div class="input-group-btn group-color"> 
+                <button type="button" class="btn btn-default btn-box dropdown-toggle" data-toggle="dropdown">
+                  <span class="fa fa-square" id="preview"></span> 
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <div class="panel panel-default">
+                      <div class="panel-heading" style="margin-top: 25px;">
+                        <span class="panel-label">Color Swatch</span>
+                      </div>
+                      <div class="panel-body">
+                        <ul class="list-inline">
+                          <li><div id="Red" class="swatch swatch-clickable" style="background-color:#FF0000"></div></li>
+                          <li><div id="Lime" class="swatch swatch-clickable" style="background-color:#00FF00"></div></li>
+                          <li><div id="Yellow" class="swatch swatch-clickable" style="background-color:#FFFF00"></div></li>
+                          <li><div id="Lemon" class="swatch swatch-clickable" style="background-color:#0000FF"></div></li>
+                          <li><div id="Lime" class="swatch swatch-clickable" style="background-color:#FF00FF"></div></li>
+                          <li><div id="Evergreen" class="swatch swatch-clickable" style="background-color:#00FFFF"></div></li>
+                        </ul>
+                        <ul class="list-inline">
+                          <li><div id="Alizarin" class="swatch swatch-clickable" style="background-color:#EF2326"></div></li>
+                          <li><div id="Green Apple" class="swatch swatch-clickable" style="background-color:#6DBE45"></div></li>
+                          <li><div id="Hot Pink" class="swatch swatch-clickable" style="background-color:#F2EA3F"></div></li>
+                          <li><div id="Sagebrush" class="swatch swatch-clickable" style="background-color:#344EA2"></div></li>
+                          <li><div id="Tan" class="swatch swatch-clickable" style="background-color:#B6519F"></div></li>
+                          <li><div id="White" class="swatch swatch-clickable" style="background-color:#73CDD8"></div></li>
+                        </ul>
+                      </div>
+                     </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+           </div>
+        </div>
+        <div id="font_select" class="row">
+          <div class="col-12">
+            <br>
+            <br>
+            <h2>Pick your font selections.</h2>
+            <hr style="border-top-color:rgb(0,0,0) !important;">
+            <h6>Proper web font implementation helps establish a message hierarchy. Help your web store customers with stylish typography.</h6>
+            <hr>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                  <label>Available Fonts:</label>
+                </div>
+              </div>
+              <div class="row" style="margin-bottom: 10px; ">
+                <div class="col-md-3">
+                  <label>Types:</label>
+                  <select name="fontType" id="fontType" class="form-control">
+                    <option value="">All Types</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label>Styles:</label>
+                  <select name="fontVariant" id="fontVariant" class="form-control">
+                    <option value="">All Styles</option>
+                  </select>
+                </div>
+                <div class="col-md-3">
+                  <label>Search:</label>
+                  <input id="searchText" type="text" value="" name="searchText" class="form-control">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <select name="googleFont" id="googleFont" class="form-control" size="5">
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="row" style="padding: 10px 15px;">
+              <label>Preview Text:</label><br />
+              <textarea id="font-preview" class="form-control" style="font-size: 18px; font-weight: normal;">Pack my box with five dozen liquor jugs</textarea>
+            </div>
+            <div class="form-group">
+              <div class="row">
+                <div class="col-md-12">
+                    <label>Selected Fonts:</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-11">
+                <select name="Fonts" id="Fonts" size="10" class="form-control" multiple></select>
+                </div>
+                <div class="col-1">
+                  <i class="fa fa-arrow-up btn btn-primary" id="upBtn" style="margin-bottom: 5px;" data-toggle="tooltip" title="Move Up"></i>
+                <br />
+                <i class="fa fa-arrow-down btn btn-primary" id="downBtn" style="margin-bottom: 5px;" data-toggle="tooltip" title="Move Down"></i>
+                <br />
+                <i class="fa fa-times btn btn-primary" id="removeBtn" style="margin-bottom: 5px;" data-toggle="tooltip" title="Remove From Page"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="feature_select" class="row">
+          <div class="col-12">
+            <br>
+            <br>
+            <h2>Pick your Web Store features and widgets.</h2>
+            <hr style="border-top-color:rgb(0,0,0) !important;">
+            <h6>Proper web font implementation helps establish a message hierarchy. Help your web store customers with stylish typography.</h6>
+            <hr>
+            <div id="feature_listings" class="container">
+              <h2>Visual Features</h2>
+              <div id="vis-features" class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-1">
+                      <h3 class="card-title">Landing Page</h3>
+                      <p class="card-text">A single web page in your Web Store that appears in response to clicking on a search engine optimized link...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-2">
+                      <h3 class="card-title">Call to Action</h3>
+                      <p class="card-text">Activate your marketing potential with smooth and customizeable popups...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-3">
+                      <h3 class="card-title">About your Web Store</h3>
+                      <p class="card-text">Introduce your digital persona with a multi-media format profile that includes videos, an image gallery and your message...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Admin Tools</h2>
+              <div id="admin-tools" class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-2">
+                      <h3 class="card-title">Automate Emails</h3>
+                      <p class="card-text">Get notified by your professional email to effectively and promptly communicate with your Web Store's userbase...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-1">
+                      <h3 class="card-title">Product Manager</h3>
+                      <p class="card-text">Organize your store with a few clicks to manage your product listings...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-3">
+                      <h3 class="card-title">Sales Analytics</h3>
+                      <p class="card-text">Stay on top of which of your products are hot and which are not..</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Sales Widgets</h2>
+              <div id="sales-widgets" class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-1">
+                      <h3 class="card-title">Item Reviews</h3>
+                      <p class="card-text">Let your buyers work for you. Give your Web Store transparency and keep your potential customers connected...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-2">
+                      <h3 class="card-title">Shopping Cart</h3>
+                      <p class="card-text">Foster trust by letting your customers securely and directly buy from you...</p>
+                      <a href="javascript:void();" class="read-more">Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-3">
+                      <h3 class="card-title">Process Payments</h3>
+                      <p class="card-text">Choose from well-known web payment companies such as: PayPal, Shopify, Google Wallet, ApplePay and Facebook Pay or implement a customizeable payment form....</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              <h2>Customer Service</h2>
+              <div id="customer-service" class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-1">
+                      <h3 class="card-title">Userbase Utilities</h3>
+                      <p class="card-text">Know your customers better with encrypted profile setup and simple to register login functionality...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-2">
+                      <h3 class="card-title">Contact Form</h3>
+                      <p class="card-text">Allowing your customers to contact you at the convenience of a button click will give your Web Store a friendly feel...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-3">
+                      <h3 class="card-title">Social Connect</h3>
+                      <p class="card-text">One-click login/registration for cordial and prompt Web Store to Social Media connectivity...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2>Advanced Options</h2>
+              <div id="advanced-options" class="row mt-5">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-1">
+                      <h3 class="card-title">Localize</h3>
+                      <p class="card-text">Reach a broader market by having your website translated...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-2">
+                      <h3 class="card-title">Meta Manager</h3>
+                      <p class="card-text">Do you know exactly what keywords or phrases your customers will use to find your webstore...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                  <div class="card">
+                    <div class="card-block block-3">
+                      <h3 class="card-title">Custom Widgets</h3>
+                      <p class="card-text">Need something more? Get a estimate for a widget that is unique to your Web Store...</p>
+                      <a href="javascript:void();" class="read-more"  >Select<i class="fa fa-angle-double-right ml-2"></i></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="purpose_of_statement" class="row">
+          <div class="col-12">
+            <br>
+            <br>
+            <h2>Describe your business plan with a statement of purpose to help us better suit your Web Store needs.</h2>
+            <hr style="border-top-color:rgb(0,0,0) !important;">
+            <h6>Proin et dui porta mauris lobortis pretium sed ut ex. Pellentesque nunc purus, tempor vitae condimentum nec, blandit non sem.</h6>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <div class="row" id="langSel">
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg c4">
+            <a id="en"><img id="engl" src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png" class="c3"></a>
+          </div>
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+            <a id="jap" alt="日本語"></a>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+            <a id="kor" alt="한국어"></a>
+          </div>
+
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 text-center lSelFlg">
+            <a id="chn" alt="中文"></a>
+          </div>
+        </div>
+        <p class="m-0 text-center text-white">Copyright &copy; Web Store 2018</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery U/I Library -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"   integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="   crossorigin="anonymous"></script>
+    
+    <!-- Custom JS -->
+    <script src="index.js"></script>
+    <script src="terms.js"></script>
+    <script src="register.js"></script>
+  </body>
+
+</html>

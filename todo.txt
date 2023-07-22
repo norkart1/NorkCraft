@@ -1,0 +1,84 @@
+Pages: Landing, Store, Item, About, Cart, Checkout, Login
+
+
+--- Selectable Features ---
+# Admin Features #
+Email notifcations [Email Receipt & Notification (PHPMailer & GDOCS Email Template)]
+Payment Info Session & Storage
+Product manager
+Sales Analytics (chart.JS custom graphs and shit) [<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.3/Chart.bundle.min.js"></script>]
+
+# Vis Features #
+Landing Image Slider Gallery (1900x1080)
+Background Gif for Store (vide.js)
+Store Call to Action Popup
+About/Profile page [multi-media format: video, image gallery, your message]
+
+# Sales Widgets #
+Item Review (Req Login)
+Cart Calculator & Table Generator
+Paypal/FacebookPay/GoogleWallet/ApplyPay API Request @ Checkout
+Stripe Elements @ Checkout (For ) || Shopify???
+
+# Customer Service #
+Login Session (PHP/MySQL)
+Social Media Passport (Facebook, Instagram, Google)
+Contact Form @ About Page
+
+# Other Features #
+Localization (Japanese, Chinese, Korean, Spanish, Italian)
+SEO/AdWords Meta Management
+
+5/26/2018
+***PRIORITY*** * manage.html for adding and removing items *
+
+***PRIORITY*** * Pull customer reviews from Amazon on item.html : https://docs.aws.amazon.com/AWSECommerceService/latest/DG/EX_RetrievingCustomerReviews.html *
+
+* URL parameter on item.html page for store navigation section click i.e. Item Alpha pulls item alpha listings from products.json * *** DONE ***
+
+5/28/2018
+***PRIORITY*** * Add social media icon to :before pseudo (float: right, height: 500%, overflow: hidden) on passport connect buttons * *** DONE ***
+
+* Temporary link to specific social media website for beta template * *** DONE ****
+
+* Beacause of lack of support on Apple products for localStorage, implement shopping cart user-side functionality only. Implement back-end session later. * *** COMPLETE FOR DEV ***
+
+* Finish checkout format check script * *** DONE ****
+
+5/30/2018
+
+***PRIORITY*** * Work on terms.js [Beta: no server interactivity] [Dev Mode: pull session vars, bool for accepted cookie policy or not and disable certain features if not accepted] *
+
+***PRIORITY*** * localize.js example for index.html with Japanese, Korean and Chinese *** DONE ***
+
+* Add Shipping cost calculator before Payment type header * *** COMPLETE FOR BETA ***
+
+* Add Google Wallet & Facebook payment types to Payment List * *** DONE ***
+
+* cart.js login req for proceeding to checkout.js * *** COMPLETE FOR DEV ***
+
+5/31/2018
+
+Session Vars:
+  * currPayment
+  * userProf
+  * userCart
+  * guestCart
+
+* Fix top and bottom padding on favicon.png * *** DONE ***
+
+* Standardize non card payment service logos * *** DONE ***
+
+* Add promo code functionality to checkout.js *
+
+6/5/2018
+
+*** PRIORITY *** 
+  * register.html and img/screenshot_features directory screenshot images for feature select row listings in div *
+  * register.html interativity for color scheme picker, font selector, features and widgets popups/descriptions/checkbox and statement of purpose textarea *
+  * register.html input user profile section after first four steps *
+
+6/6/2018
+
+* Fix padding on all pages at different widths. *
+* Find media min max inconcistencies and implement responsive CSS fix *

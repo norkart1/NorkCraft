@@ -1,0 +1,30 @@
+//Sample User entry
+//{"sgisi414":{"name":"Stefan","password":"vDm0I64V","admin":"true"}}
+
+//http://obvcode.blogspot.com/2008/05/strtr-for-javascript.html
+//Ruby's tr in JavaScript
+/*
+function tr(str, from, to) {
+    var subst;
+    for (i = 0; i < from.length; i++) {
+        subst = (to[i]) ? to[i] : to[to.length-1];
+        str = str.replace(new RegExp(str[str.indexOf(from[i])], 'g'), subst);
+    }
+    return str;
+}
+*/
+
+//Ruby Code for encrypting string
+/*
+#Cipher Decode/Encode Functions  https://stackoverflow.com/a/31712044
+ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+#generated with ALPHABET.split('').shuffle.join
+ENCODING = "MOhqm0PnycUZeLdK8YvDCgNfb7FJtiHT52BrxoAkas9RWlXpEujSGI64VzQ31w"
+def encode(text)
+  text.tr(ALPHABET, ENCODING)
+end
+
+def decode(text)
+  text.tr(ENCODING, ALPHABET)
+end
+*/
